@@ -187,4 +187,12 @@ const monsterQuestions = [
     question5
 ];
 
-export default monsterQuestions;
+const monsterQuiz = {
+    id: 'monster',
+    title: `What kind of a "KYLE" are you?`,
+    image: 'animal-crossing.png',
+    description: `Answer the questions to see what kind of "KYLE" you're most like`,
+    questions: monsterQuestions
+};
+
+export default monsterQuiz;

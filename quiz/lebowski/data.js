@@ -187,4 +187,12 @@ const lebowskiQuestions = [
     question5
 ];
 
-export default lebowskiQuestions;
+const lebowskiQuiz = {
+    id: 'lebowski',
+    title: 'Which Big Lebowski Character are you?',
+    image: 'animal-crossing.png',
+    description: `Answer the questions to see with Big Lebowski character you're most like`,
+    questions: lebowskiQuestions
+};
+
+export default lebowskiQuiz;
