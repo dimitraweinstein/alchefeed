@@ -187,4 +187,12 @@ const animalQuestions = [
     question5
 ];
 
-export default animalQuestions;
+const animalQuiz = {
+    id: 'aniamls',
+    title: 'Which Animal Crossing Character are you?',
+    image: 'animal-crossing.png',
+    description: `Answer the questions to see with Animal Crossing character you're most like`,
+    questions: animalQuestions
+};
+
+export default animalQuiz;
