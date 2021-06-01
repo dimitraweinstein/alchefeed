@@ -30,7 +30,7 @@ const question1 = {
         id: 'opennessLow',
         description: `GRAB THEM BRASS KNUCKS BABY, NOT IN MY HOUSE!`,
         result: `
-  
+
 `,
         openness: 1
     }]
@@ -44,21 +44,21 @@ const question2 = {
         id: 'opennessHigh',
         description: `That would never happen, I'm 10 minutes early, always.`,
         result: `
-  
+
 `,
         openness: 10
     }, {
         id: 'opennessMidHigh',
         description: `Call my manager and apologize as I get ready, obviously.`,
         result: `
-  
+
 `,
         openness: 7
     }, {
         id: 'opennessMidLow',
         description: `Call in sick, there's a reason I woke up late..`,
         result: `
-  
+
 `,
         openness: 3
     },
@@ -190,7 +190,7 @@ const monsterQuestions = [
 const monsterQuiz = {
     id: 'monster',
     title: `What flavor Monster Energy are you?`,
-    image: 'animal-crossing.png',
+    image: 'assets/monster/monster-main.png',
     description: `Answer the questions to see what kind of monster you're most like`,
     questions: monsterQuestions
 };
