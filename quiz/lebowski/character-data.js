@@ -4,12 +4,12 @@
 export const lebowskiCharacters = [{
     theDude: {
         openness: 9.5,
-        conscientiousness: 8,
+        conscientiousness: 10,
         extraversion: 9,
         agreeableness: 10,
         neuroticism: 5
     },
-    donnie: {
+    donny: {
         openness: 5,
         conscientiousness: 7,
         extraversion: 3,
@@ -18,12 +18,12 @@ export const lebowskiCharacters = [{
     },
     walter: {
         openness: 6,
-        conscientiousness: 6,
+        conscientiousness: 5,
         extraversion: 8,
         agreeableness: 5,
         neuroticism: 9
     },
-    bunnie: {
+    bunny: {
         openness: 10,
         conscientiousness: 1,
         extraversion: 10,
@@ -32,7 +32,7 @@ export const lebowskiCharacters = [{
     },
     jesus: {
         openness: 7,
-        conscientiousness: 5,
+        conscientiousness: 3,
         extraversion: 9,
         agreeableness: 2,
         neuroticism: 2
