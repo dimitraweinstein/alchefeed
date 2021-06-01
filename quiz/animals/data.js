@@ -2,17 +2,17 @@ const question1 = {
     id: 'q1',
     title: 'Question 1',
     description:
-    `If a visitor approaches, are they welcome to your island?`,
+    `When it comes to island getaway life how willings are you to take on new experiences?`,
     choices: [{
         id: 'opennessHigh',
-        description: 'All are welcome and may stay as long as they please.',
+        description: 'I go where the wind blows',
         result: `
         
     `,
         openness: 10
     }, {
         id: 'opennessMidHigh',
-        description: `You can visit but don't stay long`,
+        description: `I know what I like but im willing to try something new on occasions`,
         result: `
         
     `,
@@ -27,7 +27,7 @@ const question1 = {
     },
     {
         id: 'opennessLow',
-        description: `Don't come here. Ever.`,
+        description: `Bugs?! Ewww`,
         result: `
       
   `,
