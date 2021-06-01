@@ -192,7 +192,8 @@ const monsterQuiz = {
     title: `What flavor Monster Energy are you?`,
     image: 'assets/monster/monster-main.png',
     description: `Answer the questions to see what kind of monster you're most like`,
-    questions: monsterQuestions
+    questions: monsterQuestions,
+    style: './monster/style.css'
 };
 
 export default monsterQuiz;
