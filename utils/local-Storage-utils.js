@@ -1,3 +1,14 @@
+import aniamls from '../quiz/animals/data.js';
+import lebowski from '../quiz/lebowski/data.js';
+import monster from '../quiz/monster/data.js';
+const quizzes = [
+    lebowski,
+    aniamls,
+    monster
+];
+
+//need render header function
+
 
 
 const USER = 'USER';
@@ -35,3 +46,7 @@ export function completeQuiz(quizId) {
 //     return true;
 // }    
 
+export function changeOpenness(){
+
+    
+}

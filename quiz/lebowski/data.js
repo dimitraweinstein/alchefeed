@@ -104,8 +104,8 @@ const question4 = {
     }]
 };
 const question5 = {
-    id: 'q1',
-    title: 'Question 1',
+    id: 'q5',
+    title: 'Question 5',
     description:
 `If a visitor approaches, are they welcome to your island?`,
     choices: [{
@@ -144,7 +144,8 @@ const lebowskiQuiz = {
     title: 'Which Big Lebowski Character are you?',
     image: 'assets/lebowski/The dude.webp',
     description: `Answer the questions to see which Big Lebowski character you're most like`,
-    questions: lebowskiQuestions
+    questions: lebowskiQuestions,
+    style: './lebowski/style.css'
 };
 
 export default lebowskiQuiz;
