@@ -37,14 +37,14 @@ export function completeQuiz(quizId) {
     setUser();
 }
 
-export function userHasCompletedAllQuizzes() {
-    const user = getUser();
+// export function userHasCompletedAllQuizzes() {
+//     const user = getUser();
 
-    for (let quiz of quizzes) {
-        if (!user.completed[quiz.id]) return false;
-    }
-    return true;
-}    
+//     for (let quiz of quizzes) {
+//         if (!user.completed[quiz.id]) return false;
+//     }
+//     return true;
+// }    
 
 export function changeOpenness(){
 
