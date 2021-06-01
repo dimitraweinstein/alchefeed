@@ -5,7 +5,6 @@ const question1 = {
         `You come home from leg day and there's a spider right in front of your face! What do you do??`,
     choices: [
         {
-
             id: 'opennessHigh',
             description: `We can co-exist!`,
             result: ``,
@@ -105,7 +104,6 @@ const question3 = {
             description: `I'm the one texting at 3AM`,
             result: ``,
             neuroticism: 1
-
         }
     ]
 };
