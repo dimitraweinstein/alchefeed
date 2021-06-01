@@ -15,6 +15,10 @@ const question1 = {
         description: `You can visit but don't stay long`,
         openness: 7
     }, {
+        id: 'opennessMid',
+        description: `I'm not sure I like visitors.`,
+        openness: 5
+    }, {
         id: 'opennessMidLow',
         description: `I'm not sure I like visitors.`,
         openness: 3
@@ -51,75 +55,52 @@ const question2 = {
     }]
 };
 const question3 = {
-    id: 'q1',
-    title: 'Question 1',
-    description:
-`If a visitor approaches, are they welcome to your island?`,
+    id: 'q3',
+    title: 'Question 3',
+    description: `If a visitor approaches, are they welcome to your island?`,
     choices: [{
-        id: 'opennessHigh',
+        id: 'extraversionHigh',
         description: 'All are welcome and may stay as long as they please.',
-        result: `
-    
-`,
-        openness: 10
+        extraversion: 10
     }, {
-        id: 'opennessMidHigh',
+        id: 'extraversionMidHigh',
         description: `You can visit but don't stay long`,
-        result: `
-    
-`,
-        openness: 7
+        extraversion: 7
     }, {
-        id: 'opennessMidLow',
+        id: 'extraversionMid',
         description: `I'm not sure I like visitors.`,
-        result: `
-    
-`,
-        openness: 3
-    },
-    {
-        id: 'opennessLow',
-        description: `Don't come here. Ever.`,
-        result: `
-  
-`,
-        openness: 1
+        extraversion: 5
+    }, {
+        id: 'extraversionMidLow',
+        description: `I'm not sure I like visitors.`,
+        extraversion: 3
+    }, {
+        id: 'extraversionLow',
+        description: `Don't come here. Ever`,
+        extraversion: 1
     }]
 };
 const question4 = {
-    id: 'q1',
-    title: 'Question 1',
+    id: 'q4',
+    title: 'Question 4',
     description:
 `If a visitor approaches, are they welcome to your island?`,
     choices: [{
-        id: 'opennessHigh',
+        id: 'agreeablenessHigh',
         description: 'All are welcome and may stay as long as they please.',
-        result: `
-    
-`,
-        openness: 10
+        agreeableness: 10
     }, {
-        id: 'opennessMidHigh',
+        id: 'agreeablenessMidHigh',
         description: `You can visit but don't stay long`,
-        result: `
-    
-`,
-        openness: 7
+        agreeableness: 7
     }, {
-        id: 'opennessMidLow',
+        id: 'agreeablenessMidLow',
         description: `I'm not sure I like visitors.`,
-        result: `
-    
-`,
-        openness: 3
-    },
-    {
-        id: 'opennessLow',
+        agreeableness: 3
+    }, {
+        id: 'agreeablenessLow',
         description: `Don't come here. Ever.`,
-        result: `
-  
-`,
-        openness: 1
+        agreeableness: 1
     }]
 };
 const question5 = {
@@ -128,34 +109,25 @@ const question5 = {
     description:
 `If a visitor approaches, are they welcome to your island?`,
     choices: [{
-        id: 'opennessHigh',
+        id: 'neuroticisimHigh',
         description: 'All are welcome and may stay as long as they please.',
-        result: `
-    
-`,
-        openness: 10
+        neuroticisim: 10
     }, {
-        id: 'opennessMidHigh',
+        id: 'neuroticisimMidHigh',
         description: `You can visit but don't stay long`,
-        result: `
-    
-`,
-        openness: 7
+        neuroticisim: 7
     }, {
-        id: 'opennessMidLow',
+        id: 'neuroticisimMid',
         description: `I'm not sure I like visitors.`,
-        result: `
-    
-`,
-        openness: 3
-    },
-    {
-        id: 'opennessLow',
+        neuroticisim: 5
+    }, {
+        id: 'neuroticisimMidLow',
+        description: `I'm not sure I like visitors.`,
+        neuroticisim: 3
+    }, {
+        id: 'neuroticisimLow',
         description: `Don't come here. Ever.`,
-        result: `
-  
-`,
-        openness: 1
+        neuroticisim: 1
     }]
 };
 
@@ -170,8 +142,8 @@ const lebowskiQuestions = [
 const lebowskiQuiz = {
     id: 'lebowski',
     title: 'Which Big Lebowski Character are you?',
-    image: 'animal-crossing.png',
-    description: `Answer the questions to see with Big Lebowski character you're most like`,
+    image: 'assets/lebowski/The dude.webp',
+    description: `Answer the questions to see which Big Lebowski character you're most like`,
     questions: lebowskiQuestions
 };
 
