@@ -53,7 +53,7 @@ for (let choice of questions) { //grabs questions
         const input = document.createElement('input');
         label.textContent = question.description;
         input.type = 'radio';
-        input.name = 'choice';
+        input.name = `${choice.id}`;
         input.value = question.id;
         qlabel.append(label, input);
     }
