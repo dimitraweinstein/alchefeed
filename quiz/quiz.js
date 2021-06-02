@@ -1,7 +1,7 @@
 import aniamls from '../quiz/animals/data.js';
 import lebowski from '../quiz/lebowski/data.js';
 import monster from '../quiz/monster/data.js';
-import {completeQuiz } from '../utils/local-Storage-utils.js';
+import { completeQuiz } from '../utils/local-Storage-utils.js';
 import { findById } from '../utils/utils.js';
 const quizzes = [
     lebowski,
@@ -18,10 +18,8 @@ const id = searchParams.get('id');
 const quiz = findById(quizzes, id);
 const link = document.createElement('link');
 link.rel = 'stylesheet';
-link.type = 'text/css';
 link.href = `${quiz.style}`;
 head.append(link);
-console.log(link);
 const question1 = findById(quiz.questions, 'q1');
 const question2 = findById(quiz.questions, 'q2');
 const question3 = findById(quiz.questions, 'q3');
@@ -55,7 +53,7 @@ for (let choice of questions) { //grabs questions
         const input = document.createElement('input');
         label.textContent = question.description;
         input.type = 'radio';
-        input.name = 'choice';
+        input.name = `${choice.id}`;
         input.value = question.id;
         qlabel.append(label, input);
     }
@@ -67,31 +65,44 @@ choiceButton.classList.add('choice-button');
 choiceButton.textContent = 'Make Your Choice';
 playerChoiceForm.append(choiceButton);
 
-// playerChoiceForm.addEventListener('submit', (event) => {
-//     event.preventDefault();
+playerChoiceForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-//     const formData = new FormData(playerChoiceForm);
-//     const choiceId = formData.get('choice');
+    const formData = new FormData(playerChoiceForm);
+    const choiceId = formData.get('q1');
+    const choiceId2 = formData.get('q2');
+    const choiceId3 = formData.get('q3');
+    const choiceId4 = formData.get('q4');
+    const choiceId5 = formData.get('q5');
 
-//     const choiceSelection = findById(quiz.choices, choiceId);
+    const q1Choices = findById(quiz.questions, 'q1');
+    const choiceSelection = findById(q1Choices.choices, choiceId);
+    const q2Choices = findById(quiz.questions, 'q2');
+    const choiceSelection2 = findById(q2Choices.choices, choiceId2);
+    const q3Choices = findById(quiz.questions, 'q3');
+    const choiceSelectio3 = findById(q3Choices.choices, choiceId3);
+    const q4Choices = findById(quiz.questions, 'q4');
+    const choiceSelectio4 = findById(q4Choices.choices, choiceId4);
+    const q5Choices = findById(quiz.questions, 'q5');
+    const choiceSelection5 = findById(q5Choices.choices, choiceId5);
 
-//     completeQuiz(quiz.id);
+    // completeQuiz(quiz.id);
 
-//     const resultsDiv = document.createElement('div');
-//     resultsDiv.classList.add('results-display');
-//     resultsDiv.textContent = choiceSelection.result;
+    // const resultsDiv = document.createElement('div');
+    // resultsDiv.classList.add('results-display');
+    // resultsDiv.textContent = choiceSelection.result;
 
-//     const redirectButton = document.createElement('button');
-//     redirectButton.textContent = 'Back to the Map';
-//     redirectButton.classList.add('choice-button');
+    // const redirectButton = document.createElement('button');
+    // redirectButton.textContent = 'Back to the Map';
+    // redirectButton.classList.add('choice-button');
 
-//     redirectButton.addEventListener('click', () => {
-//         window.location = '../map';
-//     });
+    // redirectButton.addEventListener('click', () => {
+    //     window.location = '../map';
+    // });
 
-//     resultsDiv.append(redirectButton);
-//     playerChoiceForm.remove();
-//     main.append(resultsDiv);
-// });
+    // resultsDiv.append(redirectButton);
+    // playerChoiceForm.remove();
+    // main.append(resultsDiv);
+});
 
 main.append(quizHeader, playerChoiceForm);

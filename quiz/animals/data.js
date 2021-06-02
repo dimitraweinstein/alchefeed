@@ -144,7 +144,7 @@ const animalQuiz = {
     image: 'animal-crossing.png',
     description: `Answer the questions to see with Animal Crossing character you're most like`,
     questions: animalQuestions,
-    style: './animal/style.css'
+    style: './animals/style.css'
 };
 
 export default animalQuiz;

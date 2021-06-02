@@ -7,6 +7,7 @@ const question1 = {
     title: 'Question 1',
     description: `Are you open and accepting of others' life decisions?`,
     choices: [{
+
         id: 'opennessHigh', //Dude
         description: `Jackie Treehorn treats objects like women, man.`,
         points: 10
@@ -50,6 +51,7 @@ const question2 = {
         points: 3
     }, {
         id: 'conscientiousLow', //Bunny
+
         description: `I can't blow that far.`,
         points: 1
     }]
@@ -57,8 +59,9 @@ const question2 = {
 const question3 = {
     id: 'q3',
     title: 'Question 3',
-    description: `Do you like meeting new people, making new friends?`,
+    description: `If a visitor approaches, are they welcome to your island?`,
     choices: [{
+
         id: 'extraversionHigh', //Dude
         description: 'This is the f***in guy! I can find this f***in Lebowski guy!',
         points: 10
@@ -111,6 +114,7 @@ const question5 = {
     title: 'Question 5',
     description: `How well do you hold up under pressure?`,
     choices: [{
+
         id: 'neuroticisimHigh', //Dude
         description: `I mean we totally f***ed it up man, we f***ed up this payoff, we got the kidnappers all mad at us, and Lebowski, ya know, he yelled at me a lot...`,
         points: 10
@@ -130,6 +134,7 @@ const question5 = {
         id: 'neuroticisimLow', //Jesus
         description: `Let me tell you something, pendejo. You pull any of your crazy shit with us, you flas a piece out on the lanes, I'll take it away from you, stick it up your ass and pull the f***ing trigger 'til it goes "click".`,
         points: 1
+
     }]
 };
 
@@ -144,7 +149,7 @@ const lebowskiQuestions = [
 const lebowskiQuiz = {
     id: 'lebowski',
     title: 'Which Big Lebowski Character are you?',
-    image: './assets/lebowski/The dude.webp',
+    image: 'assets/lebowski/The dude.webp',
     description: `Answer the questions to see which Big Lebowski character you're most like`,
     questions: lebowskiQuestions,
     style: './lebowski/style.css'
