@@ -83,54 +83,52 @@ const question3 = {
 const question4 = {
     id: 'q4',
     title: 'Question 4',
-    description:
-`If a visitor approaches, are they welcome to your island?`,
+    description: `How willing are you to help a friend in need?`,
     choices: [{
         id: 'agreeablenessHigh', //Dude
-        description: 'All are welcome and may stay as long as they please.',
+        description: `She's not my special lady friend, man. I'm just helping her conceive.`,
         agreeableness: 10
     }, {
         id: 'agreeablenessMidHigh', //Donny
-        description: `You can visit but don't stay long`,
+        description: `Phone's ringin, Dude.`,
         agreeableness: 7
     }, {
         id: 'agreeablenessMidLow', //Walter
-        description: `I'm not sure I like visitors.`,
+        description: `You Want A Toe? I Can Get You A Toe.`,
         agreeableness: 5
     }, {
         id: 'agreeablenessMidLow', //Bunny
-        description: `I'm not sure I like visitors.`,
+        description: `Blow on them.`,
         agreeableness: 3
     }, {
         id: 'agreeablenessLow', //Jesus
-        description: `Don't come here. Ever.`,
+        description: `What's this day of rest sh*t?! What's this bullshit? I don't f***in care! It don't matter to Jesus. `,
         agreeableness: 1
     }]
 };
 const question5 = {
     id: 'q5',
     title: 'Question 5',
-    description:
-`If a visitor approaches, are they welcome to your island?`,
+    description: `How well do you hold up under pressure?`,
     choices: [{
         id: 'neuroticisimHigh', //Dude
-        description: 'All are welcome and may stay as long as they please.',
+        description: `I mean we totally f***ed it up man, we f***ed up this payoff, we got the kidnappers all mad at us, and Lebowski, ya know, he yelled at me a lot...`,
         neuroticisim: 10
     }, {
         id: 'neuroticisimMidHigh', //Donny
-        description: `You can visit but don't stay long`,
+        description: `I was bowling.`,
         neuroticisim: 7
     }, {
         id: 'neuroticisimMid', //Walter
-        description: `I'm not sure I like visitors.`,
+        description: `Just because we're bereaved doesn't make us saps!`,
         neuroticisim: 5
     }, {
         id: 'neuroticisimMidLow', //Bunny
-        description: `I'm not sure I like visitors.`,
+        description: `Brandt can't watch or he has to pay a hundred.`,
         neuroticisim: 3
     }, {
         id: 'neuroticisimLow', //Jesus
-        description: `Don't come here. Ever.`,
+        description: `Let me tell you something, pendejo. You pull any of your crazy shit with us, you flas a piece out on the lanes, I'll take it away from you, stick it up your ass and pull the f***ing trigger 'til it goes "click".`,
         neuroticisim: 1
     }]
 };
