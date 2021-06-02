@@ -50,7 +50,7 @@ const question2 = {
         conscientiousness: 3
     }, {
         id: 'conscientiousLow', //Bunny
-        description: `Don't come here. Ever.`,
+        description: `I can't blow that far.`,
         conscientiousness: 1
     }]
 };
