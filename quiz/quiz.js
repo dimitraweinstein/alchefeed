@@ -1,7 +1,7 @@
 import aniamls from '../quiz/animals/data.js';
 import lebowski from '../quiz/lebowski/data.js';
 import monster from '../quiz/monster/data.js';
-import {completeQuiz } from '../utils/local-Storage-utils.js';
+import { completeQuiz } from '../utils/local-Storage-utils.js';
 import { findById } from '../utils/utils.js';
 const quizzes = [
     lebowski,
@@ -21,7 +21,6 @@ link.rel = 'stylesheet';
 link.type = 'text/css';
 link.href = `${quiz.style}`;
 head.append(link);
-console.log(link);
 const question1 = findById(quiz.questions, 'q1');
 const question2 = findById(quiz.questions, 'q2');
 const question3 = findById(quiz.questions, 'q3');
