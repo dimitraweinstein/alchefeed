@@ -1,13 +1,3 @@
-import aniamls from '../quiz/animals/data.js';
-import lebowski from '../quiz/lebowski/data.js';
-import monster from '../quiz/monster/data.js';
-import { findById } from './utils.js';
-const quizzes = [
-    lebowski,
-    aniamls,
-    monster
-];
-
 //need render header function
 
 

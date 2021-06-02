@@ -2,17 +2,17 @@ const question1 = {
     id: 'q1',
     title: 'Question 1',
     description:
-    `If a visitor approaches, are they welcome to your island?`,
+    `When it comes to island getaway life how willings are you to take on new experiences?`,
     choices: [{
         id: 'opennessHigh',
-        description: 'All are welcome and may stay as long as they please.',
+        description: 'I go where the wind blows',
         result: `
         
     `,
         openness: 10
     }, {
         id: 'opennessMidHigh',
-        description: `You can visit but don't stay long`,
+        description: `I know what I like but im willing to try something new on occasions`,
         result: `
         
     `,
@@ -27,7 +27,7 @@ const question1 = {
     },
     {
         id: 'opennessLow',
-        description: `Don't come here. Ever.`,
+        description: `Bugs?! Ewww`,
         result: `
       
   `,
@@ -35,8 +35,8 @@ const question1 = {
     }]
 };
 const question2 = {
-    id: 'q1',
-    title: 'Question 1',
+    id: 'q2',
+    title: 'Question 2',
     description:
   `If a visitor approaches, are they welcome to your island?`,
     choices: [{
@@ -71,8 +71,8 @@ const question2 = {
     }]
 };
 const question3 = {
-    id: 'q1',
-    title: 'Question 1',
+    id: 'q3',
+    title: 'Question 3',
     description:
   `If a visitor approaches, are they welcome to your island?`,
     choices: [{
@@ -107,8 +107,8 @@ const question3 = {
     }]
 };
 const question4 = {
-    id: 'q1',
-    title: 'Question 1',
+    id: 'q4',
+    title: 'Question 4',
     description:
   `If a visitor approaches, are they welcome to your island?`,
     choices: [{
@@ -143,8 +143,8 @@ const question4 = {
     }]
 };
 const question5 = {
-    id: 'q1',
-    title: 'Question 1',
+    id: 'q5',
+    title: 'Question 5',
     description:
   `If a visitor approaches, are they welcome to your island?`,
     choices: [{
@@ -187,4 +187,13 @@ const animalQuestions = [
     question5
 ];
 
-export default animalQuestions;
+const animalQuiz = {
+    id: 'aniamls',
+    title: 'Which Animal Crossing Character are you?',
+    image: 'animal-crossing.png',
+    description: `Answer the questions to see with Animal Crossing character you're most like`,
+    questions: animalQuestions,
+    style: './animal/style.css'
+};
+
+export default animalQuiz;
