@@ -38,16 +38,12 @@ export function userFinishedQuiz(quiz, result){ //result is the final calc of wh
     setUser(user);
 }
 
-export function changeOpenness(userChoice){ //changes oppenness in a user obj in the array
+export function addScore(userChoice){ //changes points in a user obj in the array
     const user = getUser();
-    const newUser = {
-        openness: 0
-    };
-    if (user.openness){ //sees if user.openness is created if not the user newUser to create it.
-        user.openness = user.openness + userChoice;
-    } else {
-        user.push(newUser);
-    }
+    
+    if (user.score){ //sees if points is created if not the user newUser to create it.
+        user.score = user.score + userChoice;
+    } 
 
     setUser(user);
 }
