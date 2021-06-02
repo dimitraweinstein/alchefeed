@@ -1,7 +1,7 @@
-import aniamls from '../quiz/animals/data.js';
-import lebowski from '../quiz/lebowski/data.js';
-import monster from '../quiz/monster/data.js';
-import { findById } from '../utils/utils.js';
+import aniamls from './quiz/animals/data.js';
+import lebowski from './quiz/lebowski/data.js';
+import monster from './quiz/monster/data.js';
+import { findById } from './utils/utils.js';
 const quizDiv = document.querySelector('#quizDiv');
 
 //need render header function
