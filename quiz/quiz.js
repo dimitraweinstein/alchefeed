@@ -18,7 +18,6 @@ const id = searchParams.get('id');
 const quiz = findById(quizzes, id);
 const link = document.createElement('link');
 link.rel = 'stylesheet';
-link.type = 'text/css';
 link.href = `${quiz.style}`;
 head.append(link);
 const question1 = findById(quiz.questions, 'q1');
