@@ -3,18 +3,23 @@
 
 export const lebowskiCharacters = [{
     theDude: {
+        id: 1,
         score: 40
     },
     donny: {
+        id: 2,
         score: 30
     },
     walter: {
+        id: 3,
         score: 20
     },
     bunny: {
+        id: 4,
         score: 11
     },
     jesus: {
+        id: 5,
         score: 10
     },
 }];
