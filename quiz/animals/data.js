@@ -192,7 +192,8 @@ const animalQuiz = {
     title: 'Which Animal Crossing Character are you?',
     image: 'animal-crossing.png',
     description: `Answer the questions to see with Animal Crossing character you're most like`,
-    questions: animalQuestions
+    questions: animalQuestions,
+    style: './animals/style.css'
 };
 
 export default animalQuiz;
