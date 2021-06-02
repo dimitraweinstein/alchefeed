@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+}
