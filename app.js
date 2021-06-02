@@ -1,10 +1,7 @@
 import aniamls from './quiz/animals/data.js';
 import lebowski from './quiz/lebowski/data.js';
 import monster from './quiz/monster/data.js';
-import { findById } from './utils/utils.js';
-const quizDiv = document.querySelector('#quizDiv');
 
-//need render header function
 
 const quizzes = [
     lebowski,
@@ -13,14 +10,6 @@ const quizzes = [
 ];
 
 const quizD = document.querySelector('#quizDiv');
-
-
-
-const searchParams = new URLSearchParams(window.location.search);
-
-const id = searchParams.get('id');
-
-const quiz = findById(quizzes, id);
 
 
 
@@ -33,3 +22,4 @@ for (let quiz of quizzes){
     li.append(a);
     quizD.append(li);
 }
+
