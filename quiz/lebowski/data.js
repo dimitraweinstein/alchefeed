@@ -7,25 +7,26 @@ const question1 = {
     title: 'Question 1',
     description: `Are you open and accepting of others' life decisions?`,
     choices: [{
-        id: 'opennessHigh',
-        description: 'All are welcome and may stay as long as they please.',
-        openness: 10
+
+        id: 'opennessHigh', //Dude
+        description: `Jackie Treehorn treats objects like women, man.`,
+        points: 10
     }, {
-        id: 'opennessMidHigh',
-        description: `You can visit but don't stay long`,
-        openness: 7
+        id: 'opennessMidHigh', //Donny
+        description: `I am the walrus.`,
+        points: 7
     }, {
-        id: 'opennessMid',
-        description: `I'm not sure I like visitors.`,
-        openness: 5
+        id: 'opennessMid', //Walter
+        description: `Say what you want about the tenets of National Socialism, Dude, at least its an ethos.`,
+        points: 5
     }, {
-        id: 'opennessMidLow',
-        description: `I'm not sure I like visitors.`,
-        openness: 3
+        id: 'opennessMidLow', //Bunny
+        description: `Ulli doesn't care about anything. He's a Nihilist.`,
+        points: 3
     }, {
-        id: 'opennessLow',
-        description: `Don't come here. Ever.`,
-        openness: 1
+        id: 'opennessLow', //Jesus
+        description: `You said it man. Nobody f***s with the Jesus`,
+        points: 1
     }]
 };
 const question2 = {
@@ -35,23 +36,24 @@ const question2 = {
     choices: [{
         id: 'conscientiousHigh', //The Dude
         description: 'This aggression will not stand, man!',
-        conscientiousness: 10
+        points: 10
     }, {
         id: 'conscientiousMidHigh', //Donny
         description: `I'm throwing rocks tonight. Mark it, Dude.`,
-        conscientiousness: 7
+        points: 7
     }, {
         id: 'conscientiousMid', //Walter
         description: `This is not 'Nam. This is bowling. There are rules.`,
-        conscientiousness: 5
+        points: 5
     }, {
         id: 'conscientiousMidLow', //Jesus
         description: `I would have f***ed you in the ass Saturday. I f*** you in the ass next Wednesday instead. Wooo! You got a date Wednesday, baby!`,
-        conscientiousness: 3
+        points: 3
     }, {
         id: 'conscientiousLow', //Bunny
-        description: `Don't come here. Ever.`,
-        conscientiousness: 1
+
+        description: `I can't blow that far.`,
+        points: 1
     }]
 };
 const question3 = {
@@ -59,75 +61,80 @@ const question3 = {
     title: 'Question 3',
     description: `If a visitor approaches, are they welcome to your island?`,
     choices: [{
-        id: 'extraversionHigh',
-        description: 'All are welcome and may stay as long as they please.',
-        extraversion: 10
+
+        id: 'extraversionHigh', //Dude
+        description: 'This is the f***in guy! I can find this f***in Lebowski guy!',
+        points: 10
     }, {
-        id: 'extraversionMidHigh',
-        description: `You can visit but don't stay long`,
-        extraversion: 7
+        id: 'extraversionMidHigh', //Donny
+        description: `Who's got your undies, Walter?`,
+        points: 7
     }, {
-        id: 'extraversionMid',
-        description: `I'm not sure I like visitors.`,
-        extraversion: 5
+        id: 'extraversionMid', //Walter
+        description: `This is what happens when you f**k a stranger in the ass, Larry!`,
+        points: 5
     }, {
-        id: 'extraversionMidLow',
-        description: `I'm not sure I like visitors.`,
-        extraversion: 3
+        id: 'extraversionMidLow', //Bunny
+        description: `I'll suck your c**k for a thousand dollars.`,
+        points: 3
     }, {
-        id: 'extraversionLow',
-        description: `Don't come here. Ever`,
-        extraversion: 1
+        id: 'extraversionLow', //Jesus
+        description: `You ready to be f****ed man? I see you rolled your way into the semis. Dios mio, man. Liam and me, we're gonna f*** you up.`,
+        points: 1
     }]
 };
 const question4 = {
     id: 'q4',
     title: 'Question 4',
-    description:
-`If a visitor approaches, are they welcome to your island?`,
+    description: `How willing are you to help a friend in need?`,
     choices: [{
-        id: 'agreeablenessHigh',
-        description: 'All are welcome and may stay as long as they please.',
-        agreeableness: 10
+        id: 'agreeablenessHigh', //Dude
+        description: `She's not my special lady friend, man. I'm just helping her conceive.`,
+        points: 10
     }, {
-        id: 'agreeablenessMidHigh',
-        description: `You can visit but don't stay long`,
-        agreeableness: 7
+        id: 'agreeablenessMidHigh', //Donny
+        description: `Phone's ringin, Dude.`,
+        points: 7
     }, {
-        id: 'agreeablenessMidLow',
-        description: `I'm not sure I like visitors.`,
-        agreeableness: 3
+        id: 'agreeablenessMidLow', //Walter
+        description: `You Want A Toe? I Can Get You A Toe.`,
+        points: 5
     }, {
-        id: 'agreeablenessLow',
-        description: `Don't come here. Ever.`,
-        agreeableness: 1
+        id: 'agreeablenessMidLow', //Bunny
+        description: `Blow on them.`,
+        points: 3
+    }, {
+        id: 'agreeablenessLow', //Jesus
+        description: `What's this day of rest sh*t?! What's this bullshit? I don't f***in care! It don't matter to Jesus. `,
+        points: 1
     }]
 };
 const question5 = {
     id: 'q5',
     title: 'Question 5',
-    description:
-`If a visitor approaches, are they welcome to your island?`,
+    description: `How well do you hold up under pressure?`,
     choices: [{
-        id: 'neuroticisimHigh',
-        description: 'All are welcome and may stay as long as they please.',
-        neuroticisim: 10
+
+        id: 'neuroticisimHigh', //Dude
+        description: `I mean we totally f***ed it up man, we f***ed up this payoff, we got the kidnappers all mad at us, and Lebowski, ya know, he yelled at me a lot...`,
+        points: 10
     }, {
-        id: 'neuroticisimMidHigh',
-        description: `You can visit but don't stay long`,
-        neuroticisim: 7
+        id: 'neuroticisimMidHigh', //Donny
+        description: `I was bowling.`,
+        points: 7
     }, {
-        id: 'neuroticisimMid',
-        description: `I'm not sure I like visitors.`,
-        neuroticisim: 5
+        id: 'neuroticisimMid', //Walter
+        description: `Just because we're bereaved doesn't make us saps!`,
+        points: 5
     }, {
-        id: 'neuroticisimMidLow',
-        description: `I'm not sure I like visitors.`,
-        neuroticisim: 3
+        id: 'neuroticisimMidLow', //Bunny
+        description: `Brandt can't watch or he has to pay a hundred.`,
+        points: 3
     }, {
-        id: 'neuroticisimLow',
-        description: `Don't come here. Ever.`,
-        neuroticisim: 1
+        id: 'neuroticisimLow', //Jesus
+        description: `Let me tell you something, pendejo. You pull any of your crazy shit with us, you flas a piece out on the lanes, I'll take it away from you, stick it up your ass and pull the f***ing trigger 'til it goes "click".`,
+        points: 1
+
     }]
 };
 
