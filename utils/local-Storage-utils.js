@@ -2,6 +2,7 @@
 
 
 
+
 const USER = 'USER';
 
 export function getUser() {
@@ -47,3 +48,4 @@ export function addScore(userChoice){ //changes points in a user obj in the arra
 
     setUser(user);
 }
+
