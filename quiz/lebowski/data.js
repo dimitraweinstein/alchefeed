@@ -7,24 +7,24 @@ const question1 = {
     title: 'Question 1',
     description: `Are you open and accepting of others' life decisions?`,
     choices: [{
-        id: 'opennessHigh',
-        description: 'All are welcome and may stay as long as they please.',
+        id: 'opennessHigh', //Dude
+        description: 'Jackie Treehorn treats objects like women, man.',
         openness: 10
     }, {
-        id: 'opennessMidHigh',
-        description: `You can visit but don't stay long`,
+        id: 'opennessMidHigh', //Donny
+        description: `I am the walrus.`,
         openness: 7
     }, {
-        id: 'opennessMid',
-        description: `I'm not sure I like visitors.`,
+        id: 'opennessMid', //Walter
+        description: `Say what you want about the tenets of National Socialism, Dude, at least its an ethos.`,
         openness: 5
     }, {
-        id: 'opennessMidLow',
-        description: `I'm not sure I like visitors.`,
+        id: 'opennessMidLow', //Bunny
+        description: `Ulli doesn't care about anything. He's a Nihilist.`,
         openness: 3
     }, {
-        id: 'opennessLow',
-        description: `Don't come here. Ever.`,
+        id: 'opennessLow', //Jesus
+        description: `You said it man. Nobody f***s with the Jesus.`,
         openness: 1
     }]
 };
@@ -50,33 +50,33 @@ const question2 = {
         conscientiousness: 3
     }, {
         id: 'conscientiousLow', //Bunny
-        description: `Don't come here. Ever.`,
+        description: `I can't blow that far.`,
         conscientiousness: 1
     }]
 };
 const question3 = {
     id: 'q3',
     title: 'Question 3',
-    description: `If a visitor approaches, are they welcome to your island?`,
+    description: `Do you like meeting new people, making new friends?`,
     choices: [{
-        id: 'extraversionHigh',
-        description: 'All are welcome and may stay as long as they please.',
+        id: 'extraversionHigh', //Dude
+        description: 'This is the f***in guy! I can find this f***in Lebowski guy!',
         extraversion: 10
     }, {
-        id: 'extraversionMidHigh',
-        description: `You can visit but don't stay long`,
+        id: 'extraversionMidHigh', //Donny
+        description: `Who's got your undies, Walter?`,
         extraversion: 7
     }, {
-        id: 'extraversionMid',
-        description: `I'm not sure I like visitors.`,
+        id: 'extraversionMid', //Walter
+        description: `This is what happens when you f**k a stranger in the ass, Larry!`,
         extraversion: 5
     }, {
-        id: 'extraversionMidLow',
-        description: `I'm not sure I like visitors.`,
+        id: 'extraversionMidLow', //Bunny
+        description: `I'll suck your c**k for a thousand dollars.`,
         extraversion: 3
     }, {
-        id: 'extraversionLow',
-        description: `Don't come here. Ever`,
+        id: 'extraversionLow', //Jesus
+        description: `You ready to be f****ed man? I see you rolled your way into the semis. Dios mio, man. Liam and me, we're gonna f*** you up.`,
         extraversion: 1
     }]
 };
@@ -86,19 +86,23 @@ const question4 = {
     description:
 `If a visitor approaches, are they welcome to your island?`,
     choices: [{
-        id: 'agreeablenessHigh',
+        id: 'agreeablenessHigh', //Dude
         description: 'All are welcome and may stay as long as they please.',
         agreeableness: 10
     }, {
-        id: 'agreeablenessMidHigh',
+        id: 'agreeablenessMidHigh', //Donny
         description: `You can visit but don't stay long`,
         agreeableness: 7
     }, {
-        id: 'agreeablenessMidLow',
+        id: 'agreeablenessMidLow', //Walter
+        description: `I'm not sure I like visitors.`,
+        agreeableness: 5
+    }, {
+        id: 'agreeablenessMidLow', //Bunny
         description: `I'm not sure I like visitors.`,
         agreeableness: 3
     }, {
-        id: 'agreeablenessLow',
+        id: 'agreeablenessLow', //Jesus
         description: `Don't come here. Ever.`,
         agreeableness: 1
     }]
@@ -109,23 +113,23 @@ const question5 = {
     description:
 `If a visitor approaches, are they welcome to your island?`,
     choices: [{
-        id: 'neuroticisimHigh',
+        id: 'neuroticisimHigh', //Dude
         description: 'All are welcome and may stay as long as they please.',
         neuroticisim: 10
     }, {
-        id: 'neuroticisimMidHigh',
+        id: 'neuroticisimMidHigh', //Donny
         description: `You can visit but don't stay long`,
         neuroticisim: 7
     }, {
-        id: 'neuroticisimMid',
+        id: 'neuroticisimMid', //Walter
         description: `I'm not sure I like visitors.`,
         neuroticisim: 5
     }, {
-        id: 'neuroticisimMidLow',
+        id: 'neuroticisimMidLow', //Bunny
         description: `I'm not sure I like visitors.`,
         neuroticisim: 3
     }, {
-        id: 'neuroticisimLow',
+        id: 'neuroticisimLow', //Jesus
         description: `Don't come here. Ever.`,
         neuroticisim: 1
     }]
@@ -142,7 +146,7 @@ const lebowskiQuestions = [
 const lebowskiQuiz = {
     id: 'lebowski',
     title: 'Which Big Lebowski Character are you?',
-    image: 'assets/lebowski/The dude.webp',
+    image: './assets/lebowski/The dude.webp',
     description: `Answer the questions to see which Big Lebowski character you're most like`,
     questions: lebowskiQuestions,
     style: './lebowski/style.css'
