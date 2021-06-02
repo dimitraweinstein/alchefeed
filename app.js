@@ -2,8 +2,9 @@ import aniamls from '../quiz/animals/data.js';
 import lebowski from '../quiz/lebowski/data.js';
 import monster from '../quiz/monster/data.js';
 import { findById } from '../utils/utils.js';
+const quizDiv = document.querySelector('#quizDiv');
 
-// initialize state
+//need render header function
 
 const quizzes = [
     lebowski,
@@ -19,6 +20,7 @@ const searchParams = new URLSearchParams(window.location.search);
 
 const id = searchParams.get('id');
 
+const quiz = findById(quizzes, id);
 
 
 
