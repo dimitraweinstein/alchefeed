@@ -36,10 +36,10 @@ const bunny = {
 };
 
 const jesus = {
-id: 5,
-image: `./assets/lebowski/jesus.jpg`,
-description: `Congratulations! You're most like Jesus Quintana! 'The Jesus' is the opponent of The Dude's bowling team and did six months in Chino for exposing himself to an 8 year old. He speaks with a thick Cuban American accent and refers to himself as "The Jesus". Walter calls him a "pederast".`,
-points: 10
+    id: 5,
+    image: `./assets/lebowski/jesus.jpg`,
+    description: `Congratulations! You're most like Jesus Quintana! 'The Jesus' is the opponent of The Dude's bowling team and did six months in Chino for exposing himself to an 8 year old. He speaks with a thick Cuban American accent and refers to himself as "The Jesus". Walter calls him a "pederast".`,
+    points: 10
 };
 
 export const lebowskiCharacters = [

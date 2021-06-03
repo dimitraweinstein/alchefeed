@@ -1,6 +1,6 @@
 // import { lebowskiCharacters } from './character-data.js';
 
-import { lebowskiCharacters } from "./character-data";
+import { lebowskiCharacters } from './character-data.js';
 
 const question1 = {
     id: 'q1',

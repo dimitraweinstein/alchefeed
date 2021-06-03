@@ -1,4 +1,4 @@
-import { animalCharacters } from "./character-data.js";
+import { animalCharacters } from './character-data.js';
 
 const question1 = {
     id: 'q1',
