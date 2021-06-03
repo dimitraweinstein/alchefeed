@@ -32,7 +32,7 @@ const char3 = findById(quiz.char, '3');
 const char4 = findById(quiz.char, '4');
 const char5 = findById(quiz.char, '5');
 
-console.log(char1.name);
+// console.log(char1.name);
 
 const questions = [
     question1,
@@ -66,6 +66,9 @@ for (let choice of questions) { //grabs questions
     }
     playerChoiceForm.append(qlabel);
 }
+const redirectButton = document.createElement('button');
+redirectButton.textContent = 'see results';
+redirectButton.classList.add('choice-button');
 
 const choiceButton = document.createElement('button');
 choiceButton.classList.add('choice-button');
@@ -105,17 +108,15 @@ playerChoiceForm.addEventListener('submit', (event) => {
     // resultsDiv.classList.add('results-display');
     // resultsDiv.textContent = choiceSelection.result;
 
-    // const redirectButton = document.createElement('button');
-    // redirectButton.textContent = 'Back to the Map';
-    // redirectButton.classList.add('choice-button');
 
-    // redirectButton.addEventListener('click', () => {
-    //     window.location = '../map';
-    // });
+
+
 
     // resultsDiv.append(redirectButton);
     // playerChoiceForm.remove();
     // main.append(resultsDiv);
 });
-
-main.append(quizHeader, playerChoiceForm);
+    redirectButton.addEventListener('click', () => {
+        window.location = `../results/?id=${quiz.id}`;
+    });
+main.append(quizHeader, playerChoiceForm, redirectButton);

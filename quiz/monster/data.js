@@ -1,3 +1,5 @@
+import { monsterChar } from "./character-data.js";
+
 const question1 = {
     id: 'q1',
     title: 'Question 1',
@@ -193,7 +195,8 @@ const monsterQuiz = {
     image: './assets/monster/monster-main.png',
     description: `Answer the questions to see what kind of monster you're most like`,
     questions: monsterQuestions,
-    style: './monster/style.css'
+    style: './monster/style.css',
+    char: monsterChar
 };
 
 export default monsterQuiz;
