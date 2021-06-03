@@ -10,7 +10,7 @@ const whiteMonster = {
 
     id: 2,
     name: 'White Monster',
-    image: '../assets/monster/white.jpg',
+    image: '../assets/monster/white.png',
     description: `You're just here to have a little fun and get things done! If you didn't have time to wait in line at Dutch Bros. for some cold brew, your go to is this baby right here.`,
     score: 30
 };
@@ -19,7 +19,7 @@ const zeroMonster = {
 
     id: 3,
     name: 'Absolute Zero',
-    image: '../assets/monster/black.jpg',
+    image: '../assets/monster/black.png',
     description: `You're a no frills type of person. You don't want to consume massive amounts of sugar but you still want to get jacked up. You're just trying to do you.`,
     score: 20
 };
@@ -28,7 +28,7 @@ const javaMonster = {
 
     id: 4,
     name: 'Java Monster',
-    image: '../assets/monster/green .jpg',
+    image: '../assets/monster/green .png',
     description: `You're trying, you really are. But just like this flavor, you're not fooling anyone. Keep trying, but like, maybe a little better.`,
     score: 11
 };
@@ -36,7 +36,7 @@ const javaMonster = {
 const ogMonster = {
     id: 5,
     name: 'OG Monster',
-    image: '../assets/monster/green.jpg',
+    image: '../assets/monster/green.png',
     description: `Just like the warning on the can: You are not recommended for children or pregnant women. Reevaluate your decisions. Please.`,
     score: 10
 };

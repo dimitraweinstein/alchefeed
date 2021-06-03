@@ -10,7 +10,6 @@ const quizzes = [
 ];
 
 const main = document.querySelector('main');
-const head = document.querySelector('head');
 
 const searchParams = new URLSearchParams(window.location.search);
 
@@ -49,7 +48,7 @@ for (let choice of questions) { //grabs questions
     const qlabel = document.createElement('label');
     qlabel.classList.add('question');
     qlabel.append(choice.description);
-    for (let question of choice.choices){ //grabs question answers
+    for (let question of choice.choices) { //grabs question answers
         // console.log(question);
         const label = document.createElement('label');
         const input = document.createElement('input');
@@ -91,14 +90,14 @@ playerChoiceForm.addEventListener('submit', (event) => {
     const q5Choices = findById(quiz.questions, 'q5');
     const choiceSelection5 = findById(q5Choices.choices, choiceId5);
 
-    addScore(choiceSelection.points);
-    addScore(choiceSelection2.points);
-    addScore(choiceSelection3.points);
-    addScore(choiceSelection4.points);
-    addScore(choiceSelection5.points);
+    addScore(quiz.id, choiceSelection.points);
+    addScore(quiz.id, choiceSelection2.points);
+    addScore(quiz.id, choiceSelection3.points);
+    addScore(quiz.id, choiceSelection4.points);
+    addScore(quiz.id, choiceSelection5.points);
 
     window.location = `../results/?id=${quiz.id}`;
-   
+
 });
 redirectButton.addEventListener('click', () => {
     window.location = `../results/?id=${quiz.id}`;

@@ -21,7 +21,7 @@ const char2 = findById(quiz.char, 2);
 const char3 = findById(quiz.char, 3);
 const char4 = findById(quiz.char, 4);
 const char5 = findById(quiz.char, 5);
-const char = getCharacter(char1, char2, char3, char4, char5);
+const char = getCharacter(char1, char2, char3, char4, char5, quiz.id);
 
 const image = document.createElement('img');
 const description = document.createElement('p');
