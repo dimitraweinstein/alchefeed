@@ -53,7 +53,7 @@ const question2 = {
 const question3 = {
     id: 'q3',
     title: 'Question 3',
-    description: `How much do you knwo about island life?`,
+    description: `How much do you know about island life?`,
     choices: [{
         id: 'High',
         description: 'I could tell you anything about island life but I dont know why you would want to learn about the bugs they are wicked things.',
@@ -64,7 +64,7 @@ const question3 = {
         points: 7 // isabelle
     }, {
         id: 'Mid',
-        description: `Well I know hoe much everything costs.`,
+        description: `Well I know how much everything costs.`,
         points: 5 // tom
     }, {
         id: 'MidLow',
@@ -72,7 +72,7 @@ const question3 = {
         points: 3 // kk slider
     }, {
         id: 'Low',
-        description: `I could tell you all about the shore life`,
+        description: `I could tell you all about the shore life.`,
         points: 1 //  redd
     }]
 };
