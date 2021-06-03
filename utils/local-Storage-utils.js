@@ -21,15 +21,15 @@ export function setUser(user) {
     localStorage.setItem(USER, stringyUser);
 }
 
-export function completeQuiz(quizId) {
-    const user = getUser();
+// export function completeQuiz(quizId) {
+//     const user = getUser();
 
-    user.completed[quizId] = true;
+//     user.completed[quizId] = true;
 
-    setUser();
-}
+//     setUser();
+// }
 
-export function userFinishedQuiz(quiz, result){ //result is the final calc of who you got
+export function userFinishedQuiz(quiz, result) { //result is the final calc of who you got
     const user = getUser();
     const newResult = { //gets result of who you got and adds to an obj
         quiz: quiz.id,
@@ -39,18 +39,21 @@ export function userFinishedQuiz(quiz, result){ //result is the final calc of wh
     setUser(user);
 }
 
-export function addScore(userChoice){ //changes points in a user obj in the array
+export function addScore(quizId, userChoice) { //changes points in a user obj in the array
     const user = getUser();
-    
-    user.score = user.score + userChoice;
+
+    if (!user[quizId]) {
+        user[quizId] = {};
+    }
+    user[quizId].score = user[quizId].score + userChoice;
 
     setUser(user);
 }
 
-export function getCharacter(char1, char2, char3, char4, char5) {
+export function getCharacter(char1, char2, char3, char4, char5, quizId) {
     const user = getUser();
-    const score = user.score;
-    
+    const score = user[quizId].score;
+
     if (score >= 40) {
         return char1; //grab character data js of the quiz and grab the character for that ID
     }
