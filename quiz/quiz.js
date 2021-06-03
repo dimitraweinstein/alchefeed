@@ -1,7 +1,7 @@
 import aniamls from '../quiz/animals/data.js';
 import lebowski from '../quiz/lebowski/data.js';
 import monster from '../quiz/monster/data.js';
-import { addScore, getCharacter } from '../utils/local-Storage-utils.js';
+import { addScore } from '../utils/local-Storage-utils.js';
 import { findById } from '../utils/utils.js';
 const quizzes = [
     lebowski,
@@ -16,21 +16,16 @@ const searchParams = new URLSearchParams(window.location.search);
 
 const id = searchParams.get('id');
 const quiz = findById(quizzes, id);
-const link = document.createElement('link');
-link.rel = 'stylesheet';
-link.href = `${quiz.style}`;
-head.append(link);
+// const link = document.createElement('link');
+// link.rel = 'stylesheet';
+// link.href = `${quiz.style}`;
+// head.append(link);
 const question1 = findById(quiz.questions, 'q1');
 const question2 = findById(quiz.questions, 'q2');
 const question3 = findById(quiz.questions, 'q3');
 const question4 = findById(quiz.questions, 'q4');
 const question5 = findById(quiz.questions, 'q5');
 
-const char1 = findById(quiz.char, '1');
-const char2 = findById(quiz.char, '2');
-const char3 = findById(quiz.char, '3');
-const char4 = findById(quiz.char, '4');
-const char5 = findById(quiz.char, '5');
 
 // console.log(char1.name);
 
@@ -102,21 +97,10 @@ playerChoiceForm.addEventListener('submit', (event) => {
     addScore(choiceSelection4.points);
     addScore(choiceSelection5.points);
 
-    const char = getCharacter(char1, char2, char3, char4, char5);
-    console.log(char);
-    // const resultsDiv = document.createElement('div');
-    // resultsDiv.classList.add('results-display');
-    // resultsDiv.textContent = choiceSelection.result;
-
-
-
-
-
-    // resultsDiv.append(redirectButton);
-    // playerChoiceForm.remove();
-    // main.append(resultsDiv);
+    window.location = `../results/?id=${quiz.id}`;
+   
 });
-    redirectButton.addEventListener('click', () => {
-        window.location = `../results/?id=${quiz.id}`;
-    });
+redirectButton.addEventListener('click', () => {
+    window.location = `../results/?id=${quiz.id}`;
+});
 main.append(quizHeader, playerChoiceForm, redirectButton);
