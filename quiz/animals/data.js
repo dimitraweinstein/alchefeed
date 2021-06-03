@@ -1,3 +1,5 @@
+import { animalCharacters } from "./character-data.js";
+
 const question1 = {
     id: 'q1',
     title: 'Question 1',
@@ -144,7 +146,8 @@ const animalQuiz = {
     image: 'animal-crossing.png',
     description: `Answer the questions to see with Animal Crossing character you're most like`,
     questions: animalQuestions,
-    style: './animals/style.css'
+    style: './animals/style.css',
+    char: animalCharacters
 };
 
 export default animalQuiz;
