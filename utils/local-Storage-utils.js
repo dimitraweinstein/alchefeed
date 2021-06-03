@@ -8,7 +8,7 @@ const USER = 'USER';
 export function getUser() {
     const stringyUser = localStorage.getItem(USER);
 
-    if (!stringyUser) return [];
+    if (!stringyUser) return {};
 
     const user = JSON.parse(stringyUser);
 
@@ -42,10 +42,26 @@ export function userFinishedQuiz(quiz, result){ //result is the final calc of wh
 export function addScore(userChoice){ //changes points in a user obj in the array
     const user = getUser();
     
-    if (user.score){ //sees if points is created if not the user newUser to create it.
-        user.score = user.score + userChoice;
-    } 
+    user.score = user.score + userChoice;
 
     setUser(user);
 }
 
+export function getCharacter(char1, char2, char3, char4, char5) {
+    const user = getUser();
+    const score = user.score;
+    
+    if (score >= 40) {
+        return char1; //grab character data js of the quiz and grab the character for that ID
+    }
+    if (score >= 30) {
+        return char2;
+    }
+    if (score >= 20) {
+        return char3;
+    }
+    if (score >= 10) {
+        return char4;
+    }
+    return char5;
+}

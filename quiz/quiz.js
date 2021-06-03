@@ -1,7 +1,7 @@
 import aniamls from '../quiz/animals/data.js';
 import lebowski from '../quiz/lebowski/data.js';
 import monster from '../quiz/monster/data.js';
-import { completeQuiz } from '../utils/local-Storage-utils.js';
+import { addScore, getCharacter } from '../utils/local-Storage-utils.js';
 import { findById } from '../utils/utils.js';
 const quizzes = [
     lebowski,
@@ -26,6 +26,13 @@ const question3 = findById(quiz.questions, 'q3');
 const question4 = findById(quiz.questions, 'q4');
 const question5 = findById(quiz.questions, 'q5');
 
+const char1 = findById(quiz.char, '1');
+const char2 = findById(quiz.char, '2');
+const char3 = findById(quiz.char, '3');
+const char4 = findById(quiz.char, '4');
+const char5 = findById(quiz.char, '5');
+
+console.log(char1.name);
 
 const questions = [
     question1,
@@ -80,14 +87,20 @@ playerChoiceForm.addEventListener('submit', (event) => {
     const q2Choices = findById(quiz.questions, 'q2');
     const choiceSelection2 = findById(q2Choices.choices, choiceId2);
     const q3Choices = findById(quiz.questions, 'q3');
-    const choiceSelectio3 = findById(q3Choices.choices, choiceId3);
+    const choiceSelection3 = findById(q3Choices.choices, choiceId3);
     const q4Choices = findById(quiz.questions, 'q4');
-    const choiceSelectio4 = findById(q4Choices.choices, choiceId4);
+    const choiceSelection4 = findById(q4Choices.choices, choiceId4);
     const q5Choices = findById(quiz.questions, 'q5');
     const choiceSelection5 = findById(q5Choices.choices, choiceId5);
 
-    // completeQuiz(quiz.id);
+    addScore(choiceSelection.points);
+    addScore(choiceSelection2.points);
+    addScore(choiceSelection3.points);
+    addScore(choiceSelection4.points);
+    addScore(choiceSelection5.points);
 
+    const char = getCharacter(char1, char2, char3, char4, char5);
+    console.log(char);
     // const resultsDiv = document.createElement('div');
     // resultsDiv.classList.add('results-display');
     // resultsDiv.textContent = choiceSelection.result;
