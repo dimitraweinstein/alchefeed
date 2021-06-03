@@ -10,15 +10,17 @@ const quizzes = [
 ];
 
 const main = document.querySelector('main');
-
+const head = document.querySelector('head');
 const searchParams = new URLSearchParams(window.location.search);
 
 const id = searchParams.get('id');
 const quiz = findById(quizzes, id);
-// const link = document.createElement('link');
-// link.rel = 'stylesheet';
-// link.href = `${quiz.style}`;
-// head.append(link);
+
+const link = document.createElement('link');
+link.rel = 'stylesheet';
+link.href = `${quiz.style}`;
+head.append(link);
+
 const question1 = findById(quiz.questions, 'q1');
 const question2 = findById(quiz.questions, 'q2');
 const question3 = findById(quiz.questions, 'q3');
@@ -47,7 +49,9 @@ for (let choice of questions) { //grabs questions
     // console.log(choice);
     const qlabel = document.createElement('label');
     qlabel.classList.add('question');
-    qlabel.append(choice.description);
+    const qDiv = document.createElement('div');
+    qDiv.textContent = choice.description;
+    qlabel.append(qDiv);
     for (let question of choice.choices) { //grabs question answers
         // console.log(question);
         const label = document.createElement('label');
@@ -60,10 +64,6 @@ for (let choice of questions) { //grabs questions
     }
     playerChoiceForm.append(qlabel);
 }
-const redirectButton = document.createElement('button');
-redirectButton.textContent = 'see results';
-redirectButton.classList.add('choice-button');
-
 const choiceButton = document.createElement('button');
 choiceButton.classList.add('choice-button');
 choiceButton.textContent = 'Make Your Choice';
@@ -99,7 +99,6 @@ playerChoiceForm.addEventListener('submit', (event) => {
     window.location = `../results/?id=${quiz.id}`;
 
 });
-redirectButton.addEventListener('click', () => {
-    window.location = `../results/?id=${quiz.id}`;
-});
-main.append(quizHeader, playerChoiceForm, redirectButton);
+
+
+main.append(quizHeader, playerChoiceForm);
