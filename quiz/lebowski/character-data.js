@@ -1,8 +1,3 @@
-
-
-
-
-
 const theDude = {
     id: 1,
     name: 'The Dude',

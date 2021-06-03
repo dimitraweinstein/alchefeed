@@ -1,4 +1,4 @@
-import { monsterChar } from "./character-data.js";
+import { monsterChar } from './character-data.js';
 
 const question1 = {
     id: 'q1',

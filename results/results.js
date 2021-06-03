@@ -36,5 +36,3 @@ description.textContent = `${char.description}`;
 name.textContent = `${char.name}`;
 
 resultsDiv.append(image, name, description);
-
-
