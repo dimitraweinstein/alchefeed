@@ -1,6 +1,6 @@
 // import { lebowskiCharacters } from './character-data.js';
 
-
+import { lebowskiCharacters } from "./character-data";
 
 const question1 = {
     id: 'q1',
@@ -152,7 +152,8 @@ const lebowskiQuiz = {
     image: 'assets/lebowski/The dude.webp',
     description: `Answer the questions to see which Big Lebowski character you're most like`,
     questions: lebowskiQuestions,
-    style: './lebowski/style.css'
+    style: './lebowski/style.css',
+    char: lebowskiCharacters
 };
 
 export default lebowskiQuiz;
