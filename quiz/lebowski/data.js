@@ -59,7 +59,7 @@ const question2 = {
 const question3 = {
     id: 'q3',
     title: 'Question 3',
-    description: `If a visitor approaches, are they welcome to your island?`,
+    description: `How do you feel about someone peeing on your rug`,
     choices: [{
 
         id: 'extraversionHigh', //Dude
