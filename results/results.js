@@ -10,6 +10,8 @@ const quizzes = [
     monster
 ];
 
+const returnHomeBtn = document.querySelector('#return');
+
 
 const searchParams = new URLSearchParams(window.location.search);
 
@@ -36,3 +38,7 @@ description.textContent = `${char.description}`;
 name.textContent = `${char.name}`;
 
 resultsDiv.append(image, name, description);
+
+returnHomeBtn.addEventListener('click', () => {
+    window.location = '../';
+});
