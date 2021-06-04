@@ -2,7 +2,7 @@ const isabelle = { // 10
     id: 1,
     score: 40,
     name: 'Isabelle',
-    image: '../assets/animal/isabelle.png',
+    image: '../assets/animal/Isabelle.png',
     description: ` Isabelle is friendly, polite, hardworking, and eager to help the player in any tasks she can assist with. She is keen to make the town a better place to live in by encouraging the player to do tasks and Public Works Projects throughout the town.`
 };
 
