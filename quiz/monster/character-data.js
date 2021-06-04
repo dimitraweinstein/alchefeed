@@ -28,7 +28,7 @@ const javaMonster = {
 
     id: 4,
     name: 'Java Monster',
-    image: '../assets/monster/green .png',
+    image: '../assets/monster/java.png',
     description: `You're trying, you really are. But just like this flavor, you're not fooling anyone. Keep trying, but like, maybe a little better.`,
     score: 11
 };
