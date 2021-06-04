@@ -53,7 +53,7 @@ const question2 = {
             points: 7
         }, {
             id: 'Mid',
-            description: `Text my coworker and take my time, I'l already late!`,
+            description: `Text my coworker and take my time, I'm already late!`,
             result: ``,
             points: 5
         },
