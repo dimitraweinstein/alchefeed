@@ -56,11 +56,13 @@ for (let choice of questions) { //grabs questions
         // console.log(question);
         const label = document.createElement('label');
         const input = document.createElement('input');
-        label.textContent = question.description;
+        const span = document.createElement('span');
+        span.textContent = question.description;
         input.type = 'radio';
         input.name = `${choice.id}`;
         input.value = question.id;
-        qlabel.append(label, input);
+        label.append(input, span);
+        qlabel.append(label);
     }
     playerChoiceForm.append(qlabel);
 }

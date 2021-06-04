@@ -18,7 +18,7 @@ const question1 = {
         points: 5   // tom
     }, {
         id: 'MidLow',
-        description: `As aong as there are not any bugs!`,
+        description: `As long as there are not any bugs!`,
         points: 3  // blathers
     }, {
         id: 'Low',
@@ -143,7 +143,7 @@ const animalQuestions = [
 const animalQuiz = {
     id: 'aniamls',
     title: 'Which Animal Crossing Character are you?',
-    image: 'animal-crossing.png',
+    image: './assets/animal/animal-crossing.png',
     description: `Answer the questions to see with Animal Crossing character you're most like`,
     questions: animalQuestions,
     style: './animals/style.css',

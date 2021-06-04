@@ -17,8 +17,11 @@ const quizD = document.querySelector('#quizDiv');
 for (let quiz of quizzes){
     const li = document.createElement('li');
     const a = document.createElement('a');
+    const image = document.createElement('img');
     a.href = `./quiz/?id=${quiz.id}`;
-    a.textContent = quiz.title;
+    image.src = quiz.image;
+    image.classList.add(`${quiz.id}`);
+    a.append(image);
     li.append(a);
     quizD.append(li);
 }
