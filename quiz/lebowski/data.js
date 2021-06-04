@@ -149,7 +149,7 @@ const lebowskiQuestions = [
 const lebowskiQuiz = {
     id: 'lebowski',
     title: 'Which Big Lebowski Character are you?',
-    image: './assets/lebowski/Thedude.webp',
+    image: './assets/lebowski/Thedude.jpeg',
     description: `Answer the questions to see which Big Lebowski character you're most like`,
     questions: lebowskiQuestions,
     style: './lebowski/style.css',

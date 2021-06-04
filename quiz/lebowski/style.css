@@ -8,13 +8,13 @@ body {
 
 .question {
     margin-bottom: 10px;
-        width: 60%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: var(--gutter);
-    padding-bottom: var(--gutter);    
+    padding-bottom: var(--gutter); 
 }
 
 .question Div  {
@@ -31,15 +31,8 @@ form {
     align-items: center;
 }
 main {
-    overflow: scroll;
     margin-bottom: 5%;
     width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
     margin-top: 5%;
     border: solid 4px #eca86c83;
     border-radius: 20px;
