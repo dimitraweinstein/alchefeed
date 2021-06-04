@@ -19,7 +19,7 @@ const kkSlider = { // 5
     id: 3,
     name: 'K.K. Slider',
     score: 20,
-    image: '../assests/animal/KKSlider.png',
+    image: '../assets/animal/KKSlider.png',
     description: `K.K. Slider is a hippie-style traveling musician, which is reflected in his mellow speech towards the player. He comes across as someone who wants to be liberated, as shown by his rebellion against putting a price on his songs. This adds to the musician stereotype of going against a particular norm.`
 };
 const redd = { // 3
