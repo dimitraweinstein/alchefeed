@@ -1,7 +1,7 @@
 const theDude = {
     id: 1,
     name: 'The Dude',
-    image: `../assets/lebowski/Thedude.webp`,
+    image: `../assets/lebowski/Thedude.jpeg`,
     description: `Congratulations! You're most like Jeffrey "The Dude" Lebowski!
     The Dude is a middle-aged slacker, stoner dropout who wants nothing more than to listen to whale music in the bathtub while smoking a joint. He bowls in a league with his best friends, is unemployed, and his drink of choice is a White Russian, which he calls a Caucasian. He is described as a pacifist, and maintains an even-keeled if somewhat out-of-it attitude throughout the events he endures. He is at heart an affable and relaxed man, a lovable antihero who is quick to forgive and just wants to have a relaxed time.`,
     points: 40

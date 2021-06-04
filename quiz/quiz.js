@@ -68,7 +68,7 @@ for (let choice of questions) { //grabs questions
 }
 const choiceButton = document.createElement('button');
 choiceButton.classList.add('choice-button');
-choiceButton.textContent = 'Make Your Choice';
+choiceButton.textContent = 'SUBMIT';
 playerChoiceForm.append(choiceButton);
 
 playerChoiceForm.addEventListener('submit', (event) => {

@@ -34,5 +34,7 @@ image.classList.add('pics');
 
 description.textContent = `${char.description}`;
 name.textContent = `${char.name}`;
+description.classList.add('description');
+name.classList.add('name');
 
 resultsDiv.append(image, name, description);
